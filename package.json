@@ -1,16 +1,23 @@
 {
-  "name": "weather-client",
+  "name": "@robindelaater/weather-client",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A weather client",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "package"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Robin de Laater",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@robindelaater/weather-client": "^1.0.0"
   }
 }
